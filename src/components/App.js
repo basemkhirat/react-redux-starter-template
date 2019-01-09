@@ -1,36 +1,27 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import {Route, BrowserRouter} from 'react-router-dom';
+
 import Master from '~/layouts/Master';
+import Home from '~/components/Home';
+import Page from '~/components/Page';
 
 class App extends React.Component {
 
     render() {
         return (
-            <Master>
-                <h1>{this.props.message}</h1>
-            </Master>
+
+            <BrowserRouter>
+
+                <Master>
+                    <Route path="/" exact component={Home}/>
+                    <Route path="/page" component={Page}/>
+                </Master>
+
+            </BrowserRouter>
         );
     }
 
 }
 
-const mapStateToProps = (state) => {
-
-    return {
-        message: state.message
-    }
-
-};
-
-const mapDispatchToProps = (dispatch) => {
-
-    return {
-        change_message() {
-            dispatch({type: "CHANGE_MESSAGE"})
-        }
-    }
-
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
 

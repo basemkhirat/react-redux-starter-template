@@ -10,9 +10,8 @@ const reducer = (state = initalState, action) => {
 
             return {
                 ...state,
-                message: "Hello React!"
+                message: action.message
             }
-            
     }
 
     return state;
