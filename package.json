@@ -1,14 +1,14 @@
 {
-  "name": "react-starter-kit",
+  "name": "react-redux-starter-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "react starter kit",
+  "author": "basem khirat",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --env=development --hot",
     "build": "webpack --env=production"
   },
-  "author": "basem khirat",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.2.3",
@@ -42,7 +42,6 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
-    "redux": "^4.0.1",
-    "semantic-ui-css": "^2.4.1"
+    "redux": "^4.0.1"
   }
 }
