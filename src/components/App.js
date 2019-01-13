@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 import Master from '~/layouts/Master';
 import Home from '~/components/Home';
